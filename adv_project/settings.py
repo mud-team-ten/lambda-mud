@@ -83,7 +83,7 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-# ! CHECK IF THERE IS AN ERROR 
+# ! CHECK IF THERE IS AN ERROR #
 DATABASES['default'] = dj_database_url.config('DATABASE_URL')
 
 
