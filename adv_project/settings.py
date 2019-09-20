@@ -84,7 +84,7 @@ DATABASES = {
     }
 }
 # ! CHECK IF THERE IS AN ERROR 
-DATABASES['default'] = dj_database_url.config(config('DATABASE_URL'))
+DATABASES['default'] = dj_database_url.config('DATABASE_URL')
 
 
 # Password validation
