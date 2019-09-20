@@ -10,6 +10,7 @@ dj-database-url = "*"
 whitenoise = "*"
 django = "*"
 djangorestframework = "*"
+python-decouple = "*"
 
 [dev-packages]
 
