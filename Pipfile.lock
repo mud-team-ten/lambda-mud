@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "a792a9d1314d6ead1912851ece7bbd36df4bd5d188908b71f93602c430eaba63"
+            "sha256": "1a1c1b7409e79fd09f876023b6414370c75154cd2dcd1d0bfecbcb84f6763744"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -53,7 +53,6 @@
             "index": "pypi",
             "version": "==2.2.5"
         },
-
         "django-allauth": {
             "hashes": [
                 "sha256:6a189fc4d3ee23596c3fd6e9f49c59b5b15618980118171a50675dd6a27cc589"
@@ -61,13 +60,6 @@
             "index": "pypi",
             "version": "==0.40.0"
         },
-        "django-rest-auth": {
-            "hashes": [
-                "sha256:f11e12175dafeed772f50d740d22caeab27e99a3caca24ec65e66a8d6de16571"
-            ],
-            "index": "pypi",
-            "version": "==0.9.5"
-
         "django-heroku": {
             "hashes": [
                 "sha256:2bc690aab89eedbe01311752320a9a12e7548e3b0ed102681acc5736a41a4762",
@@ -75,7 +67,13 @@
             ],
             "index": "pypi",
             "version": "==0.3.1"
-
+        },
+        "django-rest-auth": {
+            "hashes": [
+                "sha256:f11e12175dafeed772f50d740d22caeab27e99a3caca24ec65e66a8d6de16571"
+            ],
+            "index": "pypi",
+            "version": "==0.9.5"
         },
         "djangorestframework": {
             "hashes": [
@@ -93,7 +91,6 @@
             "index": "pypi",
             "version": "==19.9.0"
         },
-
         "idna": {
             "hashes": [
                 "sha256:c357b3f628cf53ae2c4c05627ecc484553142ca23264e593d327bcde5e9c3407",
@@ -107,7 +104,7 @@
                 "sha256:df884cd6cbe20e32633f1db1072e9356f53638e4361bef4e8b03c9127c9328ea"
             ],
             "version": "==3.1.0"
-
+        },
         "psycopg2": {
             "hashes": [
                 "sha256:128d0fa910ada0157bba1cb74a9c5f92bb8a1dca77cf91a31eb274d1f889e001",
@@ -123,7 +120,6 @@
                 "sha256:f0e6b697a975d9d3ccd04135316c947dd82d841067c7800ccf622a8717e98df1"
             ],
             "version": "==2.8.3"
-
         },
         "psycopg2-binary": {
             "hashes": [
@@ -190,7 +186,8 @@
         "requests-oauthlib": {
             "hashes": [
                 "sha256:bd6533330e8748e94bf0b214775fed487d309b8b8fe823dc45641ebcd9a32f57",
-                "sha256:d3ed0c8f2e3bbc6b344fa63d6f933745ab394469da38db16bdddb461c7e25140"
+                "sha256:d3ed0c8f2e3bbc6b344fa63d6f933745ab394469da38db16bdddb461c7e25140",
+                "sha256:dd5a0499abfefd087c6dd96693cbd5bfd28aa009719a7f85ab3fabe3956ef19a"
             ],
             "version": "==1.2.0"
         },
