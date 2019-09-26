@@ -14,7 +14,7 @@ python-decouple = "*"
 django-rest-auth = "*"
 django-allauth = "*"
 django-heroku = "*"
-
+django-cors-headers = "*"
 
 [dev-packages]
 
