@@ -32,7 +32,6 @@ DEBUG = config('DEBUG', cast=bool)
 ALLOWED_HOSTS = ['.herokuapp.com', '127.0.0.1']
 
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -49,7 +48,8 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'rest_auth.registration',
-    'adventure'
+    'adventure',
+    'corsheaders',
 ]
 
 SITE_ID = 1
@@ -66,6 +66,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -95,6 +96,10 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'adv_project.wsgi.application'
 
+CORS_ORIGIN_WHITELIST = [
+    'http://localhost:3000',
+    config('DEPLOYED_FE_URL')
+]
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
@@ -109,7 +114,6 @@ DATABASES = {
 DATABASES['default'] = dj_database_url.config('DATABASE_URL')
 DATABASES['default']['ENGINE'] = 'django.db.backends.sqlite3'
 DATABASES['default']['NAME'] = os.path.join(BASE_DIR, 'db.sqlite3')
-
 
 
 # Password validation
