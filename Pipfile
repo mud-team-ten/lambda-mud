@@ -11,6 +11,8 @@ whitenoise = "*"
 django = "*"
 djangorestframework = "*"
 python-decouple = "*"
+django-rest-auth = "*"
+django-allauth = "*"
 
 [dev-packages]
 
