@@ -16,9 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include, re_path
 from rest_framework import routers
-from adventure.api import AllRoomsViewSet
+from adventure.api import AllRoomsViewSet, PlayerViewSet
+
 router = routers.DefaultRouter()
 router.register(r'allrooms', AllRoomsViewSet)
+router.register(r'init', PlayerViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
